@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        h1{
+            color: rgb(186, 252, 3);
+            text-align: center;
+            border: 3px solid rgb(241, 5, 5);
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+        }
+        p{
+            text-align: center;
+            font-family: cursive;
+            font-style: italic;
+            font-weight: bold;
+            color:aqua;
+        }
+        .ul1{
+            color: rgb(255, 255, 255);
+            font-style: italic;
+        }
+        .ul2{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        .ul3{
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        .ul0{
+            color: aqua;
+            font-weight: bold;
+        }
+        .name{
+            color: rgb(248, 255, 255);
+        }
+        body{
+            background-image: url(bg1.jpg);
+            background-size: cover;
+        }
+        .h1{
+            color: chartreuse;
+            background-color: rgb(0, 0, 0);
+            background-blend-mode: color-burn;
+            border: 1px solid rgb(235, 235, 235);
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="h1" href="#">Home</a>
+        <a class="h1" href="contact.html">Contacts</a>
+        <a class="h1" href="#">About us</a>
+    </header>
+    <h1>Shivam Singh</h1>
+    <p>"A Developer in making....."</p>
+    
+   <img style="height: 100px; border: 2px solid aqua; border-radius: 200px;" src="shivam.jpg" alt="Image Not Available"> <br><br>
+   <span class="name"><strong>Name :- Shivam Singh</strong></span> <br>
+   <span class="name"><strong>Dept :- Bachelor in Computer Application</strong></span> <br>
+   <span class="name"><strong>Sem :- III</strong></span> <br>
+   <span class="name"><strong>College :- Patna College</strong></span> <br>
+    <h3 class="ul0">Skills</h3>
+    <ul class="ul1">
+        <li>Java</li>
+        <li>C programming</li>
+        <li>Python</li>
+        <li>Web Development
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4 class="ul0">Projects :-</h4>
+    <div ><a class="ul1" href="05_Html.html" target = "_blank">Forms Demo</a>
+    </div>
+   <div> <a class="ul1" href="06_Html.html" target = "_blank">Inline and Block Element</a>
+   </div>
+   <div> <a class="ul1" href="04_Html.html" target = "_blank">Tables and Lists</a>
+   </div> <br>
+   <h3 class="ul0">Write to us</h3>
+   <form action="backend.php">
+    <div>
+        <label class="ul3" for="name"><strong>Name</strong></label>
+     <input  type="text" name="myName" id="name">
+    </div> <br>
+    <div>
+        <label class="ul3" for="contact"><strong>Contact No </strong>
+        <input type="number" name="number" id="contact">
+        </label>
+    </div>
+    <div> <br>
+       <label class="ul3" for="fd"><strong>Your feedback</strong> <br><textarea name="feedback" id="fd" cols="30" rows="10"></textarea> </label> 
+    </div>
+    <input class="ul2" type="submit" value="Submit">
+    <input class="ul2" type="reset" value="Reset">
+   </form>
+   <br>
+</body>
+</html>
